@@ -50,3 +50,7 @@
 ;;
 ;; (add-hook 'window-setup-hook 'spacemacs/toggle-gui-elements-off)
 ;; (add-hook 'tty-setup-hook 'spacemacs/toggle-gui-elements-off)
+
+;; tar workaround https://github.com/syl20bnr/spacemacs/issues/15629
+(defvar quelpa-build-explicit-tar-format-p t
+  "Ensure Qulpa calls tar with the argument `gnu' to the `--format' option.")
